@@ -1,0 +1,74 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*************** Forside *********************/
+
+.category_list_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px 10px 0 10px;
+}
+
+.category {
+  background-color: gray;
+  padding: 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+@media (min-width: 600px) {
+  .category_list_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px 10px 0 10px;
+  }
+}
+
+/*************** Produktliste *********************/
+
+.product_list_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  gap: 10px;
+}
+
+.kort {
+  padding: 5px;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  position: relative;
+}
+
+.discount {
+  position: absolute;
+  height: 45px;
+  width: 100px;
+  top: 15px;
+  left: 15px;
+  background-color: gray;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .product_list_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px 10px 0 10px;
+  }
+}
