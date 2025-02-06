@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>produktliste</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./produktliste.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <a href="index.html">Forside</a>
+        <a href="produkt.html">produkt</a>
+        <a href="produktliste.html">produktliste</a>
+    </header>
+    <button data-gender="Onsale">On sale</button>
+    <button data-gender="soldout">Sold out</button>
+    <button data-gender="all">All products</button>
+
     <div class="product_list_container">
         <div class="kort">
             <img src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="produkt">
             <p><b>Track Jacket</b></p>
-            <br>
+
             <p class="brand">Puma │ Jacket</p>
             <p>DKK 4299,-</p>
             <a href="produkt.html">Read more</a>
@@ -21,16 +31,16 @@
         <div class="kort">
             <img src="https://kea-alt-del.dk/t7/images/webp/640/1531.webp" alt="produkt">
             <p><b>Grey Solid Round Neck T-Shirt</b></p>
-            <br>
+
             <p class="brand">Puma │ T-Shirt</p>
             <p>DKK 799,-</p>
             <a href="produkt.html">Read more</a>
         </div>
         <div class="kort">
             <img src="https://kea-alt-del.dk/t7/images/webp/640/1532.webp" alt="produkt">
-            <p class="discount">SOLD OUT!</p>
+            <p class="udsolgt">SOLD OUT!</p>
             <p><b>Grey Leaping Cat T-shirt</b></p>
-            <br>
+            <div class="rabat">45%</div>
             <p class="brand">Puma │ T-Shirt</p>
             <p>DKK 899,-</p>
             <a href="produkt.html">Read more</a>
@@ -38,7 +48,7 @@
         <div class="kort">
             <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="produkt">
             <p><b>Blue T20 Indian Cricket Jersey</b></p>
-            <br>
+
             <p class="brand">Nike │ T-Shirt</p>
             <p>DKK 1595,-</p>
             <a href="produkt.html">Read more</a>
@@ -47,7 +57,7 @@
     </div>
 
 
-
+    <footer>Lavet af Axel</footer>
 
 </body>
 
