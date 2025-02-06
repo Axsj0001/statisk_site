@@ -41,6 +41,7 @@ img {
 .product_list_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
   padding: 10px;
   gap: 10px;
 }
@@ -49,7 +50,7 @@ img {
   padding: 5px;
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 4;
+  grid-row: span 5;
   position: relative;
 }
 
@@ -64,11 +65,94 @@ img {
   text-align: center;
 }
 
+.rabat {
+  position: absolute;
+  text-align: right;
+  margin: 15px 0 0 10px;
+  background-color: red;
+}
+
 @media (min-width: 600px) {
   .product_list_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     padding: 10px 10px 0 10px;
   }
+}
+
+/*************** Produktliste *********************/
+
+.hide {
+  display: none;
+}
+
+.udsolgt {
+  position: absolute;
+  text-align: right;
+  margin: 15px 0 0 10px;
+  background-color: red;
+}
+/*************** Produkt *********************/
+.produktet {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.text_boks_1 {
+  padding: 50px;
+}
+
+.text_boks_2 {
+  padding: 50px;
+  text-align: center;
+  color: white;
+  background-color: grey;
+}
+
+.knap {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.rabat_pro {
+  position: absolute;
+  text-align: right;
+  margin: 15px 0 0 10px;
+  background-color: red;
+}
+
+.udsolgt_pro {
+  position: absolute;
+  text-align: right;
+  top: 34px;
+  left: 60px;
+  background-color: red;
+}
+
+.breadycrumy {
+  text-decoration: none;
+  list-style-type: none;
+}
+.breadycrumy_items {
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.breadycrumy_items:not(:last-of-type)::after {
+  content: ">";
+  margin: 0 5px;
+  color: black;
+  text-decoration: none;
+}
+.breadycrumy a {
+  text-decoration: none;
+  color: black;
 }
